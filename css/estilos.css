@@ -30,7 +30,7 @@ body {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4 ,fr);
-    grid-template-rows: min-content min-content 70% min-content;
+    grid-template-rows: min-content min-content 1fr min-content;
     grid-template-areas: 
     "header header header header"
     "aside  aside  aside  aside"
@@ -73,7 +73,7 @@ footer {
 
 .search input {
     background-color: #f0f0f0;
-    width: 400px;
+    width: 300px;
     padding: 8px;
 }
 
@@ -227,12 +227,117 @@ nav ul li ul li a:hover {
     display: none;
 }
  
+/* Contenido de aside */
+
+aside {
+    display: flex;
+    justify-content: center;
+}
+aside img {
+    width: 100%;
+    height: 190px;
+}
+
+/* Contenido de main */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;    
+    
+}
+
+.card {
+    width: 250px;
+    margin: 20px;
+    border-radius: 6px;
+    background-image: linear-gradient(to bottom, #4daddf , #6c4892);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 30%;
+    border-radius:6px;
+}
+
+.contenido {
+    text-align: center;
+    padding: 12px;
+}
+
+.contenido p {
+    line-height: 1.5;
+}
+
+.contenido h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px;
+    margin-top: 10px;
+    color: #4daddf;
+    border: 1px solid #4daddf;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+
+.contenido a:hover {
+    background: #4daddf;
+    color: #6c4892;
+    transform: scale(1.2);
+}
+
+/* Contenido de footer */
+
+.bg_footer {
+    background-color: #6c4892;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+.redes a i {
+    font-size: 30px;
+    text-align: center;
+    padding: 8px 10px;
+    color: #4daddf;
+    opacity: calc(0.5);
+    border: 1px solid #4daddf;
+    border-radius: 50%;
+    margin: 14px;
+}
+
+.redes a i:hover {
+    transform: scale(1.4);
+    transition: all 600ms ease;
+    opacity: calc(1);
+}
+
+.df_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #4daddf;
+}
+
 /* @media */
 
 @media screen and (max-width: 768px){
     .grid_container{
         grid-template-columns: 1fr;
-        grid-template-rows: min-content min-content 75% min-content;
+        grid-template-rows: min-content min-content 1fr min-content;
         grid-template-areas: 
         "header"
         "aside"
@@ -320,76 +425,4 @@ nav ul li ul li a:hover {
     footer h3 {
         display: none;
     }
-}
-
-/* Contenido de aside */
-
-aside {
-    display: flex;
-    justify-content: center;
-}
-aside img {
-    width: 75%;
-    height: 190px;
-}
-
-/* Contenido de main */
-
-.productos {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    
-}
-
-.productos img {
-    width: 300px;
-    border-radius: 50%;
-    margin: 20px;
-}
-
-h3 {
-    text-align: center;
-    color: #4daddf;
-    padding: 20px;
-}
-
-.registrarse {
-    width: 300px;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 3px;
-}
-
-/* Contenido de footer */
-
-.bg_footer {
-    background-color: #6c4892;
-    padding: 1em 0;
-    margin-top: auto;
-}
-
-.redes a i {
-    font-size: 30px;
-    text-align: center;
-    padding: 8px 10px;
-    color: #4daddf;
-    opacity: calc(0.5);
-    border: 1px solid #4daddf;
-    border-radius: 50%;
-    margin: 15px;
-}
-
-.redes a i:hover {
-    transform: scale(1.4);
-    transition: all 600ms ease;
-    opacity: calc(1);
-}
-
-.df_footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: #4daddf;
 }
