@@ -260,7 +260,7 @@ aside img {
 
 .card:hover {
     box-shadow: 5px 20px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-3%);
+    transform: translateY(-5%);
 }
 
 .card img {

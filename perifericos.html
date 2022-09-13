@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg grid_container">
     <!-- Logo + Buscador + Nav -->
@@ -33,20 +34,20 @@
                         <li><a href="index.html"></a></li>
                         <li><a href="#">Hardware</a>
                             <ul>
-                                <li><a href="hardware.html">Placa Madre</a></li>
-                                <li><a href="hardware.html">Procesador</a></li>
-                                <li><a href="hardware.html">Memoria Ram</a></li>
-                                <li><a href="hardware.html">Grafica</a></li>
-                                <li><a href="hardware.html">Fuente de poder</a></li>
-                                <li><a href="hardware.html">Almacenamiento</a></li>
+                                <li><a href="./pages/placamadre.html">Placa Madre</a></li>
+                                <li><a href="./pages/procesador.html">Procesador</a></li>
+                                <li><a href="./pages/ram.html">Memoria Ram</a></li>
+                                <li><a href="./pages/grafica.html">Grafica</a></li>
+                                <li><a href="./pages/fuente.html">Fuente de poder</a></li>
+                                <li><a href="./pages/almacenamiento.html">Almacenamiento</a></li>
                             </ul>
                         </li>
                         <li><a href="#" id="seleccion">Periféricos</a>
                             <ul>
-                                <li><a href="perifericos.html">Mouse</a></li>
-                                <li><a href="perifericos.html">Teclado</a></li>
-                                <li><a href="perifericos.html">Auriculares</a></li>
-                                <li><a href="perifericos.html">Mousepad</a></li>
+                                <li><a href="./pages/mouse.html">Mouse</a></li>
+                                <li><a href="./pages/teclado.html">Teclado</a></li>
+                                <li><a href="./pages/auriculares.html">Auriculares</a></li>
+                                <li><a href="./pages/mousepad.html">Mousepad</a></li>
                             </ul>
                         </li>
                         <li><a href="gabinetes.html">Gabinetes</a></li>
@@ -64,21 +65,10 @@
     <!-- Cierre Logo + Buscador + Nav -->
     <!-- Banner promocional-->
     <aside>
-        <img src="./img/banner.png" alt="banner promocional">
+        <div data-aos="flip-up"><img src="./img/banner.png" alt="banner promocional"></div>
     </aside>
     <!-- lista de informacion de mi sitio-->
     <main class="main">
-        <section>
-            <h3>Perifericos</h3>
-            <ul>
-                <li>Monitores</li>
-                <li>Auriculares</li>
-                <li>Mouse</li>
-                <li>Teclado</li>
-                <li>Microfono</li>
-                <li>Camaras</li>
-            </ul>
-        </section>
     </main>
     <!-- inicio del footer-->
     <footer class="df_footer bg_footer footer">
@@ -93,6 +83,8 @@
     </footer>
     <!-- cierre del footer -->
     <script src="https://kit.fontawesome.com/eb0bcb2bd3.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>   AOS.init(); </script>
 
 </body>
 </html>

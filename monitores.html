@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg grid_container">
     <!-- Logo + Buscador + Nav -->
@@ -33,20 +34,20 @@
                         <li><a href="index.html"></a></li>
                         <li><a href="#">Hardware</a>
                             <ul>
-                                <li><a href="hardware.html">Placa Madre</a></li>
-                                <li><a href="hardware.html">Procesador</a></li>
-                                <li><a href="hardware.html">Memoria Ram</a></li>
-                                <li><a href="hardware.html">Grafica</a></li>
-                                <li><a href="hardware.html">Fuente de poder</a></li>
-                                <li><a href="hardware.html">Almacenamiento</a></li>
+                                <li><a href="./pages/placamadre.html">Placa Madre</a></li>
+                                <li><a href="./pages/procesador.html">Procesador</a></li>
+                                <li><a href="./pages/ram.html">Memoria Ram</a></li>
+                                <li><a href="./pages/grafica.html">Grafica</a></li>
+                                <li><a href="./pages/fuente.html">Fuente de poder</a></li>
+                                <li><a href="./pages/almacenamiento.html">Almacenamiento</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Periféricos</a>
                             <ul>
-                                <li><a href="perifericos.html">Mouse</a></li>
-                                <li><a href="perifericos.html">Teclado</a></li>
-                                <li><a href="perifericos.html">Auriculares</a></li>
-                                <li><a href="perifericos.html">Mousepad</a></li>
+                                <li><a href="./pages/mouse.html">Mouse</a></li>
+                                <li><a href="./pages/teclado.html">Teclado</a></li>
+                                <li><a href="./pages/auriculares.html">Auriculares</a></li>
+                                <li><a href="./pages/mousepad.html">Mousepad</a></li>
                             </ul>
                         </li>
                         <li><a href="gabinetes.html">Gabinetes</a></li>
@@ -62,21 +63,58 @@
         </div>
     </header>
     <!-- Cierre Logo + Buscador + Nav -->
-    <!-- Banner promocional-->
+    <!-- Inicio de Aside -->
     <aside>
-        <img src="./img/banner.png" alt="banner promocional">
+        <div data-aos="flip-up"><img src="./img/banner.png" alt="banner promocional"></div>
     </aside>
-    <!-- lista de informacion de mi sitio-->
+    <!-- Cierre de Aside -->
+    <!-- Inicio de Main -->
     <main class="main">
-        <h3>Monitores</h3>
-        <ul>
-            <li>Gigabyte Aorus FV43U</li>
-            <li>Samsung Odyssey G7</li>
-            <li>LG UltraGear 38GN950</li>
-            <li>Samsung CRG9</li>
-        </ul>
+        <div class="container">
+            <div class="card">
+                <figure>
+                    <img src="./img/monitor1.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>GADNIC 27” Gamer G4D71N-F</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eius?</p>
+                    <a href="#">comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="./img/monitor2.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>GIGABYTE G24F</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eius?</p>
+                    <a href="#">comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="./img/monitor3.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>SAMSUNG EQ FHD COLOR 22"</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eius?</p>
+                    <a href="#">comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="./img/monitor4.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h3>ASUS 24″ VP249QGR</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eius?</p>
+                    <a href="#">comprar</a>
+                </div>
+            </div>
+        </div>
     </main>
-    <!-- inicio del footer-->
+    <!-- Cierre de Main-->
+    <!-- Inicio de Footer-->
     <footer class="df_footer bg_footer footer">
         <h3 class="texto">Contacto ☎</h3>
         <div class="redes">
@@ -87,8 +125,10 @@
             <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
         </div>
     </footer>
-    <!-- cierre del footer -->
+    <!-- Cierre del Footer -->
+    <!-- Scripts -->
     <script src="https://kit.fontawesome.com/eb0bcb2bd3.js" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>   AOS.init(); </script>
 </body>
 </html>
