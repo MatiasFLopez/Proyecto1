@@ -62,28 +62,41 @@
             </div>
         </div>
     </header>
-        <!-- Cierre Logo + Buscador + Nav -->
-        <!-- Banner promocional-->
+    <!-- Cierre Logo + Buscador + Nav -->
+    <!-- Inicio de Aside -->
     <aside>
         <div data-aos="flip-up"><img src="./img/banner.png" alt="banner promocional"></div>
     </aside>
-        <!-- informacion sobre registrarse-->
+    <!-- Cierre de Aside -->
+    <!-- Inicio de Main -->
     <main class="main">
-        <section>
-            <form action="#" class="registrarse">
-                <fieldset>
-                    <legend>Registrarse</legend>
-                        <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Apellido">
-                        <input type="text" placeholder="Email">
-                        <input type="text" placeholder="Contraseña">
-                        <input type="text" placeholder="Confirmar contraseña">
-                        <input type="submit" name="Enviar">
-                </fieldset>
+        
+        <section class="form__register">
+            <div class="superior">
+                <span>
+                    <div data-aos="fade-left"><i class="fa-regular fa-user"></i></div>
+                </span>
+            </div>
+            
+            <form action="#" class="register">
+                <label for="usuario">Email:</label>
+                <input type="text" name="usuario" id="usuario" required>
+    
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password">
+    
+                <label for="password">Confirmar contarseña:</label>
+                <input type="password" name="password" id="password">
+    
+                <label for="number">Teléfono:</label>
+                <input type="number" name="number" id="number" required>
+    
+                <input id="submit" type="submit" value="Enviar">        
             </form>
         </section>
     </main>
-    <!-- inicio del footer-->
+    <!-- Cierre de Main-->
+    <!-- Inicio de Footer-->
     <footer class="df_footer bg_footer footer">
         <h3 class="texto">Contacto ☎</h3>
         <div class="redes">
@@ -94,10 +107,10 @@
             <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
         </div>
     </footer>
-    <!-- cierre del footer -->
+    <!-- Cierre del Footer -->
+    <!-- Scripts -->
     <script src="https://kit.fontawesome.com/eb0bcb2bd3.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>   AOS.init(); </script>
-
 </body>
 </html>
