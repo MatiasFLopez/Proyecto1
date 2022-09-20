@@ -329,7 +329,7 @@ aside img {
 .register {
     padding: .8rem;
     overflow: hidden;
-    color: grey;
+    color: #9b9b9b;
 }
 
 .register label, .register input {
@@ -359,6 +359,9 @@ aside img {
 }
 
 /* Contenido de footer */
+.pagos {
+    font-size: 3rem;
+}
 
 .row {
     background-color: #6c4892;
@@ -387,6 +390,12 @@ aside img {
     font-size: 30px;
     color: #6c4892;
 }
+
+.linea {
+    border-top:solid 1px rgba(255, 255, 255, 0.404);
+    width:100%;
+    margin-bottom: 1rem;
+  }
 
 /* @media */
 
