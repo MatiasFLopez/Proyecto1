@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PcShop-Perifericos</title>
+    <title>PcShop-Registrarse</title>
     <link rel="icon" href="./img/PcShop.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body class="bg grid_container">
@@ -22,7 +22,7 @@
     <header class="header">
         <div class="header_superior">
             <div class="logo">
-                <a href="index.html"><img src="./img/PcShop.png" alt="imagen del logo"></a>
+                <a href="../index.html"><img src="../img/PcShop.png" alt="imagen del logo"></a>
             </div>
             <div class="buscador">
                 <input type="search" placeholder="Buscar producto...">
@@ -36,30 +36,30 @@
                 </label>
                 <nav>
                     <ul>
-                        <li><a href="index.html"></a></li>
+                        <li><a href="../index.html"></a></li>
                         <li><a href="#">Hardware</a>
                             <ul>
-                                <li><a href="./pages/placamadre.html">Placa Madre</a></li>
-                                <li><a href="./pages/procesador.html">Procesador</a></li>
-                                <li><a href="./pages/ram.html">Memoria Ram</a></li>
-                                <li><a href="./pages/grafica.html">Grafica</a></li>
-                                <li><a href="./pages/fuente.html">Fuente de poder</a></li>
-                                <li><a href="./pages/almacenamiento.html">Almacenamiento</a></li>
+                                <li><a href="./placamadre.html">Placa Madre</a></li>
+                                <li><a href="./procesador.html">Procesador</a></li>
+                                <li><a href="./ram.html">Memoria Ram</a></li>
+                                <li><a href="./grafica.html">Grafica</a></li>
+                                <li><a href="./fuente.html">Fuente de poder</a></li>
+                                <li><a href="./almacenamiento.html">Almacenamiento</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" id="seleccion">Periféricos</a>
+                        <li><a href="#">Periféricos</a>
                             <ul>
-                                <li><a href="./pages/mouse.html">Mouse</a></li>
-                                <li><a href="./pages/teclado.html">Teclado</a></li>
-                                <li><a href="./pages/auriculares.html">Auriculares</a></li>
-                                <li><a href="./pages/mousepad.html">Mousepad</a></li>
+                                <li><a href="./mouse.html">Mouse</a></li>
+                                <li><a href="./teclado.html">Teclado</a></li>
+                                <li><a href="./auriculares.html">Auriculares</a></li>
+                                <li><a href="./mousepad.html">Mousepad</a></li>
                             </ul>
                         </li>
-                        <li><a href="gabinetes.html">Gabinetes</a></li>
-                        <li><a href="monitores.html">Monitores</a></li>
-                        <li><a href="#"><i class="fa-solid fa-user"></i></a>
+                        <li><a href="./gabinetes.html">Gabinetes</a></li>
+                        <li><a href="./monitores.html">Monitores</a></li>
+                        <li><a href="#" id="seleccion"><i class="fa-solid fa-user"></i></a>
                             <ul>
-                                <li><a href="registrarse.html">Mi cuenta</a></li>
+                                <li><a href="./registrarse.html">Mi cuenta</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -70,11 +70,35 @@
     <!-- Cierre Logo + Buscador + Nav -->
     <!-- Inicio de Aside -->
     <aside>
-        <div data-aos="flip-up"><img src="./img/banner.png" alt="banner promocional"></div>
+        <div data-aos="flip-up"><img src="../img/banner.png" alt="banner promocional"></div>
     </aside>
     <!-- Cierre de Aside -->
     <!-- Inicio de Main -->
     <main class="main">
+
+        <section class="form__register">
+            <div class="superior">
+                <span>
+                    <div data-aos="fade-left"><i class="fa-regular fa-user"></i></div>
+                </span>
+            </div>
+
+            <form action="#" class="register">
+                <label for="usuario">Email:</label>
+                <input type="text" name="usuario" id="usuario" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password">
+
+                <label for="password">Confirmar contarseña:</label>
+                <input type="password" name="password" id="password">
+
+                <label for="number">Teléfono:</label>
+                <input type="number" name="number" id="number" required>
+
+                <input id="submit" type="submit" value="Enviar">
+            </form>
+        </section>
     </main>
     <!-- Cierre de Main-->
     <!-- Inicio de Footer-->
@@ -92,10 +116,10 @@
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <p class="h5 mb-3">Informacion</p>
                 <div class="mb-3">
-                    <a class="text-white text-decoration-none" href="index.html">Inicio</a>
+                    <a class="text-white text-decoration-none" href="../index.html">Inicio</a>
                 </div>
                 <div class="mb-3">
-                    <a class="text-white text-decoration-none" href="registrarse.html">Registrarme</a>
+                    <a class="text-white text-decoration-none" href="./registrarse.html">Registrarme</a>
                 </div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
