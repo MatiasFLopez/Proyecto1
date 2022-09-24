@@ -1,0 +1,40 @@
+/* === Contenido de footer === */
+
+.pagos {
+    font-size: 3rem;
+}
+
+.row {
+    background-color: $purpura;
+}
+
+.h3 {
+    color: $celeste;
+}
+
+.h5 {
+    color: $celeste;
+}
+
+.btn {
+    background-color: $celeste;
+    color: $purpura;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: space-evenly;
+    i {
+        padding: 15px;
+        font-size: 30px;
+        color: $purpura;
+    }
+}
+
+.linea {
+    border-top:solid 1px rgba(255, 255, 255, 0.404);
+    width:100%;
+    margin-bottom: 1rem;
+}
+
+/* === Cierre de footer === */

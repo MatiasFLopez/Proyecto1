@@ -1,0 +1,108 @@
+/* === Contenido de main === */
+
+.container__cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+    flex-wrap: wrap;  
+    .cards {
+        width: 250px;
+        margin: 20px;
+        border-radius: 6px;
+        background-image: linear-gradient(to bottom, $celeste , $purpura);
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+        cursor: default;
+        transition: $mov;
+        &:hover {
+            box-shadow: 5px 20px 5px rgba(0, 0, 0, 0.5);
+            transform: translateY(-5%);
+        }
+        figure {
+            img {
+            width: 100%;
+            height: 30%;
+            border-radius:6px;
+            }
+        }
+        .contenido {
+            text-align: center;
+            padding: 12px;
+            p {
+                line-height: 1.5;
+                color: #fff;
+            }
+            h3 {
+                font-weight: 400;
+                margin-bottom: 10px;
+                color: #fff;
+            }
+            a {
+                text-decoration: none;
+                display: inline-block;
+                padding: 7px;
+                margin-top: 10px;
+                color: $celeste;
+                border: 1px solid $celeste;
+                border-radius: 5px;
+                transition: $mov;
+                &:hover {
+                    background: $celeste;
+                    color: $purpura;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }   
+}
+
+.form__register {
+    background-color: #fff;
+    width: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+    .superior {
+        width: 100%;
+        background-color: $purpura;
+        overflow: hidden;
+        color: $celeste;
+        span {
+            font-size: 3rem;
+            display: block;
+            text-align: center;
+            padding: 2.5rem;
+        }
+    }
+    .register {
+        padding: .8rem;
+        overflow: hidden;
+        color: $purpura;
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        input:not([type=submit]) {
+            border: none;
+            border-bottom: 2px solid $celeste;
+            margin-bottom: 20px;
+            outline: none;
+            color: $celeste;
+        }
+    }   
+}
+
+#submit {
+    padding: 10px;
+    border: none;
+    background-color: $purpura;
+    color: $celeste;
+    transition: $mov;
+    &:hover {
+        transform: scaleY(1.1);
+    }
+}
+
+/* === Cierre de Main === */
