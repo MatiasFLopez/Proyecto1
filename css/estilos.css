@@ -288,11 +288,12 @@ aside {
 
 .modal-body {
   display: flex;
-  justify-content: space-evenly; }
-  .modal-body i {
-    padding: 15px;
-    font-size: 30px;
-    color: #6c4892; }
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .modal-body a {
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
 
 .linea {
   border-top: solid 1px rgba(255, 255, 255, 0.404);

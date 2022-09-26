@@ -23,11 +23,12 @@
 
 .modal-body {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    i {
-        padding: 15px;
-        font-size: 30px;
-        color: $purpura;
+    align-items: center;
+    a {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 }
 
