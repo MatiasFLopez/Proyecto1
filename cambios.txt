@@ -1,0 +1,5 @@
+/* Cambios en etiquetas meta y tittle
+
+Agregue etiqueta meta con atibutos author, description y keywords con su respectivo contenido. Cada una relacionada con el la pagina de la web especifoca en la que se encuentra.
+
+Tambien edite el tituto de cada pagina para que esté relacionado a su contenido.
