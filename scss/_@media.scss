@@ -1,4 +1,4 @@
-/* @media */
+/* === @media === */
 
 @media screen and (max-width: 768px){
     .grid_container{
@@ -38,6 +38,15 @@
         padding: 0px 20px;
     }
 
+    nav ul li {
+        &:hover ul {
+          top: 50px;
+        }
+        ul {
+          left: 100px;
+        }
+    }
+
     nav > ul {
         flex-direction: column;
         background-color: $purpura;
@@ -51,22 +60,18 @@
         z-index: 100;
         opacity: 0;
         visibility: hidden;
-    }
-
-    nav > ul > li > a:hover {
-        transform: scale(1);
-    }
-
-    nav ul li ul {
-        left: 100px;
-    }
-
-    nav ul li:hover ul {
-        top: 50px;
-    }
-
-    nav > ul > li:first-child a {
-        background-position: 10px;
+        > li{
+            &:first-child {
+                > a {
+                background-position: 10px;
+                }
+            }
+            > a {
+                &:hover {
+                    transform: scale(1);
+                }
+            }
+        }
     }
 
     #seleccion {
