@@ -1,5 +1,7 @@
-/* Cambios en etiquetas meta y tittle
+=== Cambios en etiquetas meta, tittle y capeta img ===
 
-Agregue etiqueta meta con atibutos author, description y keywords con su respectivo contenido. Cada una relacionada con el la pagina de la web especifoca en la que se encuentra.
+Agregue etiqueta meta con atrubutos author, description y keywords con su respectivo contenido. Cada una relacionada con la página de la web especifica en la que se encuentra.
 
-Tambien edite el tituto de cada pagina para que esté relacionado a su contenido.
+También edité el título de cada página para que esté relacionado con su contenido.
+
+Todas las fotos se encuentran correctamente comprimidas para ayudar al Seo de la página.
