@@ -7,3 +7,13 @@ $gris: #f0f0f0;
 /* === transiciones === */
 
 $mov: all 300ms ease;
+
+/* === Mixin === */
+
+@mixin fondos ($imagen) {
+    background-image: $imagen;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}

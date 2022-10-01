@@ -12,12 +12,7 @@
     }
 
     .bg {
-        background-image: url(../img/fondo2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-    
+        @include fondos (url(../img/fondo3.jpg))
     }
 
     .header_superior {
@@ -114,6 +109,10 @@
         "aside"
         "main"
         "footer";
+    }
+
+    .bg {
+        @include fondos (url(../img/fondo1.jpg))
     }
 
     .buscador {

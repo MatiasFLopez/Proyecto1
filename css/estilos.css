@@ -1,5 +1,6 @@
 /* === Paleta de Colores === */
 /* === transiciones === */
+/* === Mixin === */
 /* === Reset === */
 * {
   margin: 0;
@@ -16,7 +17,7 @@ body {
 
 /* === Backgraund === */
 .bg {
-  background-image: url(../img/fondo1.jpg);
+  background-image: url(../img/fondo2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -303,7 +304,7 @@ aside {
     grid-template-rows: min-content min-content 1fr min-content;
     grid-template-areas: "header" "aside" "main" "footer"; }
   .bg {
-    background-image: url(../img/fondo2.jpg);
+    background-image: url(../img/fondo3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -359,6 +360,12 @@ aside {
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content 1fr min-content;
     grid-template-areas: "header" "aside" "main" "footer"; }
+  .bg {
+    background-image: url(../img/fondo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; }
   .buscador {
     display: none; }
   .carousel {
