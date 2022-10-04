@@ -1,5 +1,10 @@
 /* === Contenido de main === */
-
+.h2 {
+    text-align: center;
+    color: $celeste;
+    font-size: 1.7rem;
+    padding: 1rem;
+}
 .container__cards {
     display: flex;
     justify-content: space-evenly;

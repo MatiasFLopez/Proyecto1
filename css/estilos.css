@@ -176,6 +176,12 @@ aside {
 
 /* === Cierre de Asise === */
 /* === Contenido de main === */
+.h2 {
+  text-align: center;
+  color: #4daddf;
+  font-size: 1.7rem;
+  padding: 1rem; }
+
 .container__cards {
   display: flex;
   justify-content: space-evenly;
