@@ -64,7 +64,7 @@
     background-color: #fff;
     width: 400px;
     position: relative;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
@@ -74,7 +74,7 @@
         overflow: hidden;
         color: $celeste;
         span {
-            font-size: 3rem;
+            font-size: 2rem;
             display: block;
             text-align: center;
             padding: 2.5rem;
@@ -96,18 +96,18 @@
             outline: none;
             color: $celeste;
         }
+        #submit {
+            padding: 10px;
+            border: none;
+            background-color: $purpura;
+            color: $celeste;
+            transition: $mov;
+            &:hover {
+                transform: scaleY(1.1);
+            }
+        }
     }   
 }
 
-#submit {
-    padding: 10px;
-    border: none;
-    background-color: $purpura;
-    color: $celeste;
-    transition: $mov;
-    &:hover {
-        transform: scaleY(1.1);
-    }
-}
 
 /* === Cierre de Main === */

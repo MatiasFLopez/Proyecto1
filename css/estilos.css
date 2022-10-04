@@ -52,7 +52,7 @@ body {
     width: 80px; }
   .header_superior .buscador input {
     background-color: #f0f0f0;
-    width: 300px;
+    width: 280px;
     padding: 4px; }
 
 /* Bara de navegacion */
@@ -230,7 +230,7 @@ aside {
   background-color: #fff;
   width: 400px;
   position: relative;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.8); }
@@ -240,7 +240,7 @@ aside {
     overflow: hidden;
     color: #4daddf; }
     .form__register .superior span {
-      font-size: 3rem;
+      font-size: 2rem;
       display: block;
       text-align: center;
       padding: 2.5rem; }
@@ -258,15 +258,14 @@ aside {
       margin-bottom: 20px;
       outline: none;
       color: #4daddf; }
-
-#submit {
-  padding: 10px;
-  border: none;
-  background-color: #6c4892;
-  color: #4daddf;
-  transition: all 300ms ease; }
-  #submit:hover {
-    transform: scaleY(1.1); }
+    .form__register .register #submit {
+      padding: 10px;
+      border: none;
+      background-color: #6c4892;
+      color: #4daddf;
+      transition: all 300ms ease; }
+      .form__register .register #submit:hover {
+        transform: scaleY(1.1); }
 
 /* === Cierre de Main === */
 /* === Contenido de footer === */
@@ -355,9 +354,9 @@ aside {
     visibility: visible;
     opacity: 1; }
   .form__register {
-    width: 290px; }
-  .superior span {
-    font-size: 2rem; } }
+    width: 280px; }
+    .form__register .superior span {
+      font-size: 1.2rem; } }
 
 @media screen and (max-width: 320px) {
   .grid_container {

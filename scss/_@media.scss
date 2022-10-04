@@ -92,12 +92,12 @@
     }
 
     .form__register {
-        width: 290px;
+        width: 280px;
+        .superior span {
+            font-size: 1.2rem;
+        }
     }
 
-    .superior span {
-        font-size: 2rem;
-    }
 }
 
 @media screen and (max-width: 320px){
