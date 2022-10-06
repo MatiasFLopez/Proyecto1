@@ -5,11 +5,13 @@
     font-size: 1.7rem;
     padding: 1rem;
 }
+
 .container__cards {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;  
-    flex-wrap: wrap;  
+    align-items: center;
+    flex-wrap: wrap;
+
     .cards {
         width: 250px;
         margin: 20px;
@@ -18,29 +20,35 @@
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
         cursor: default;
         transition: $mov;
+
         &:hover {
             box-shadow: 5px 20px 5px rgba(0, 0, 0, 0.5);
             transform: translateY(-5%);
         }
+
         figure {
             img {
-            width: 100%;
-            height: 30%;
-            border-radius:6px;
+                width: 100%;
+                height: 30%;
+                border-radius: 6px;
             }
         }
+
         .contenido {
             text-align: center;
             padding: 12px;
+
             p {
                 line-height: 1.5;
                 color: #fff;
             }
+
             h3 {
                 font-weight: 400;
                 margin-bottom: 10px;
                 color: #fff;
             }
+
             a {
                 text-decoration: none;
                 display: inline-block;
@@ -50,6 +58,7 @@
                 border: 1px solid $celeste;
                 border-radius: 5px;
                 transition: $mov;
+
                 &:hover {
                     background: $celeste;
                     color: $purpura;
@@ -57,7 +66,69 @@
                 }
             }
         }
-    }   
+    }
+}
+
+.iconos {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__cajas {
+        text-decoration: none;
+        width: 218px;
+        height: 200px;
+        background: #4daddf;
+        margin: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+        transition: all 300ms ease;
+        position: relative;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.5);
+            background: #6c4892;
+            z-index: 1;
+        }
+        i {
+            font-size: 50px;
+            color: #6c4892;
+        }
+        &:hover i {
+            color: #4daddf;
+        }
+        h5 {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #6c4892;
+        }
+        &:hover h5 {
+            color: #4daddf;
+            opacity: 0px;
+        }
+        h4 {
+            text-transform: uppercase;
+            font-size: 18px;
+            color: #4daddf;
+            position: absolute;
+            bottom: 50px;
+            filter: blur(5px);
+            opacity: 1;
+        }
+        &:hover h4 {
+            font-size: 14px;
+            opacity: 1;
+            filter: blur(0px);
+            color: #4daddf;
+            transition: all 300ms ease;
+        }
+    }
 }
 
 .form__register {
@@ -68,11 +139,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+
     .superior {
         width: 100%;
         background-color: $purpura;
         overflow: hidden;
         color: $celeste;
+
         span {
             font-size: 2rem;
             display: block;
@@ -80,15 +153,19 @@
             padding: 2.5rem;
         }
     }
+
     .register {
         padding: .8rem;
         overflow: hidden;
         color: $purpura;
-        label, input {
+
+        label,
+        input {
             display: block;
             width: 100%;
             margin-bottom: 8px;
         }
+
         input:not([type=submit]) {
             border: none;
             border-bottom: 2px solid $celeste;
@@ -96,17 +173,19 @@
             outline: none;
             color: $celeste;
         }
+
         #submit {
             padding: 10px;
             border: none;
             background-color: $purpura;
             color: $celeste;
             transition: $mov;
+
             &:hover {
                 transform: scaleY(1.1);
             }
         }
-    }   
+    }
 }
 
 

@@ -226,6 +226,59 @@ aside {
           color: #6c4892;
           transform: scale(1.2); }
 
+.iconos {
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .iconos__cajas {
+    text-decoration: none;
+    width: 218px;
+    height: 200px;
+    background: #4daddf;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 300ms ease;
+    position: relative; }
+    .iconos__cajas:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.5);
+      background: #6c4892;
+      z-index: 1; }
+    .iconos__cajas i {
+      font-size: 50px;
+      color: #6c4892; }
+    .iconos__cajas:hover i {
+      color: #4daddf; }
+    .iconos__cajas h5 {
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #6c4892; }
+    .iconos__cajas:hover h5 {
+      color: #4daddf;
+      opacity: 0px; }
+    .iconos__cajas h4 {
+      text-transform: uppercase;
+      font-size: 18px;
+      color: #4daddf;
+      position: absolute;
+      bottom: 50px;
+      filter: blur(5px);
+      opacity: 1; }
+    .iconos__cajas:hover h4 {
+      font-size: 14px;
+      opacity: 1;
+      filter: blur(0px);
+      color: #4daddf;
+      transition: all 300ms ease; }
+
 .form__register {
   background-color: #fff;
   width: 400px;
@@ -248,7 +301,8 @@ aside {
     padding: .8rem;
     overflow: hidden;
     color: #6c4892; }
-    .form__register .register label, .form__register .register input {
+    .form__register .register label,
+    .form__register .register input {
       display: block;
       width: 100%;
       margin-bottom: 8px; }
