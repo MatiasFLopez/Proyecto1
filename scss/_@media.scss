@@ -1,5 +1,7 @@
 /* === @media === */
 
+// Tablet
+
 @media screen and (max-width: 768px){
     .grid_container{
         grid-template-columns: 1fr;
@@ -100,6 +102,8 @@
 
 }
 
+// Movil
+
 @media screen and (max-width: 320px){
     .grid_container{
         grid-template-columns: 1fr;
@@ -123,3 +127,5 @@
         display: none;
     }
 }
+
+/* === Cierre de @media === */
