@@ -123,6 +123,13 @@
         display: none;
     }
 
+    .iconos {
+        &__cajas {
+            width: 130px;
+            height: 148px;
+        }
+    }
+
     .carousel {
         display: none;
     }

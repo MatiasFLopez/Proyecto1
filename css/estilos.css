@@ -181,7 +181,7 @@ aside {
 .h2 {
   text-align: center;
   color: #4daddf;
-  font-size: 1.7rem;
+  font-size: 1.7em;
   padding: 1rem; }
 
 .container__cards {
@@ -427,6 +427,9 @@ aside {
     background-position: center; }
   .buscador {
     display: none; }
+  .iconos__cajas {
+    width: 130px;
+    height: 148px; }
   .carousel {
     display: none; } }
 
