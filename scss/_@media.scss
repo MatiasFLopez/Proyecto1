@@ -2,15 +2,15 @@
 
 // Tablet
 
-@media screen and (max-width: 768px){
-    .grid_container{
+@media screen and (max-width: 768px) {
+    .grid_container {
         grid-template-columns: 1fr;
         grid-template-rows: min-content min-content 1fr min-content;
-        grid-template-areas: 
-        "header"
-        "aside"
-        "main"
-        "footer";
+        grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "footer";
     }
 
     .bg {
@@ -19,32 +19,35 @@
 
     .header_superior {
         padding: 10px;
-        .buscador{
+
+        .buscador {
             input {
-            width: 140px;
+                width: 140px;
             }
         }
-        .logo{
+
+        .logo {
             img {
                 width: 60px;
             }
         }
     }
-    
+
     .barra_menu {
         padding: 0px 20px;
     }
 
     nav ul li {
         &:hover ul {
-          top: 50px;
+            top: 50px;
         }
+
         ul {
-          left: 100px;
+            left: 100px;
         }
     }
 
-    nav > ul {
+    nav>ul {
         flex-direction: column;
         background-color: $purpura;
         position: absolute;
@@ -57,13 +60,15 @@
         z-index: 100;
         opacity: 0;
         visibility: hidden;
-        > li{
+
+        >li {
             &:first-child {
-                > a {
-                background-position: 10px;
+                >a {
+                    background-position: 10px;
                 }
             }
-            > a {
+
+            >a {
                 &:hover {
                     transform: scale(1);
                 }
@@ -74,7 +79,7 @@
     #seleccion {
         transform: scale(1);
     }
-    
+
     #casa {
         transform: scale(1);
     }
@@ -87,7 +92,7 @@
         display: flex;
     }
 
-    #check_menu:checked ~ nav > ul {
+    #check_menu:checked~nav>ul {
         height: 300px;
         visibility: visible;
         opacity: 1;
@@ -95,6 +100,7 @@
 
     .form__register {
         width: 280px;
+
         .superior span {
             font-size: 1.2rem;
         }
@@ -104,15 +110,15 @@
 
 // Movil
 
-@media screen and (max-width: 320px){
-    .grid_container{
+@media screen and (max-width: 320px) {
+    .grid_container {
         grid-template-columns: 1fr;
         grid-template-rows: min-content min-content 1fr min-content;
-        grid-template-areas: 
-        "header"
-        "aside"
-        "main"
-        "footer";
+        grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "footer";
     }
 
     .bg {
