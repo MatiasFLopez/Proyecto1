@@ -89,7 +89,7 @@
         text-decoration: none;
         width: 218px;
         height: 200px;
-        background: #4daddf;
+        background: $celeste;
         margin: 1px;
         display: flex;
         align-items: center;
@@ -102,23 +102,23 @@
         &:hover {
             transform: scale(1.1);
             box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.5);
-            background: #6c4892;
+            background: $purpura;
             z-index: 1;
         }
 
         i {
             font-size: 50px;
-            color: #6c4892;
+            color: $purpura;
         }
 
         &:hover i {
-            color: #4daddf;
+            color: $celeste;
         }
 
         h5 {
             text-transform: uppercase;
             font-size: 14px;
-            color: #6c4892;
+            color: $purpura;
         }
 
         &:hover h5 {
@@ -129,7 +129,7 @@
         h4 {
             text-transform: uppercase;
             font-size: 18px;
-            color: #4daddf;
+            color: $celeste;
             position: absolute;
             bottom: 50px;
             filter: blur(5px);
@@ -140,7 +140,7 @@
             font-size: 14px;
             opacity: 1;
             filter: blur(0px);
-            color: #4daddf;
+            color: $celeste;
             transition: all 300ms ease;
         }
     }
