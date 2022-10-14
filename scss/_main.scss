@@ -122,7 +122,7 @@
         }
 
         &:hover h5 {
-            color: $celeste;
+            color: $purpura;
             opacity: 0px;
         }
 
@@ -147,63 +147,78 @@
 }
 
 // Formulario para registrarse
-
-.form__register {
-    background-color: #fff;
-    width: 400px;
-    position: relative;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
-
-    .superior {
-        width: 100%;
-        background-color: $purpura;
-        overflow: hidden;
-        color: $celeste;
-
-        span {
-            font-size: 2rem;
-            display: block;
-            text-align: center;
-            padding: 2.5rem;
-        }
-    }
-
-    .register {
-        padding: .8rem;
-        overflow: hidden;
-        color: $purpura;
-
-        label,
-        input {
-            display: block;
-            width: 100%;
-            margin-bottom: 8px;
-        }
-
-        input:not([type=submit]) {
-            border: none;
-            border-bottom: 2px solid $celeste;
-            margin-bottom: 20px;
-            outline: none;
-            color: $celeste;
-        }
-
-        #submit {
-            padding: 10px;
-            border: none;
-            background-color: $purpura;
-            color: $celeste;
-            transition: $mov;
-
-            &:hover {
-                transform: scaleY(1.1);
-            }
-        }
+.article{
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: $celeste;
+    border-radius: 15px;
+    color: $purpura;
+    p{
+        margin-top: 20px;
+        font-size: 18px;
+        cursor: default;
     }
 }
 
+.form {
+    background-color: #fff;
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    padding: 3em 3em;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px -5px rgb(0, 0, 0 / 30%);
+    text-align: center;
+    color: #000;
+    &__parrafo{
+        display: inline-block;
+    }
+    &__link {
+        margin-top: 1em;
+        display: block;
+        text-decoration: none;
+        transition: $mov;
+        color: $celeste;
+        padding: 1rem;
+        &:hover{
+            background: $celeste;
+            color: $purpura;
+            transform: scale(1.1);
+            margin-left: 2px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        }
+    }
+    &__container {
+        display: grid;
+        gap: 1em;
+    }
+    &__group{
+        position: relative;
+        color: $purpura;
+    }
+    &__input{
+        width: 100%;
+        background: none;
+        color: $celeste;
+        font-size: 1rem;
+        padding: .4em .3em;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid $celeste;
+        font-family: 'Basic', sans-serif;
+    }
+    &__submit {
+        background-color: $purpura;
+        color: $celeste;
+        font-family: 'Basic', sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        padding: .8rem 0;
+        margin-top: 2em;
+        border: none;
+        border-radius: .5em;
+    }
+}
 
 /* === Cierre de Main === */

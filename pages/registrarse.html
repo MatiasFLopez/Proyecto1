@@ -10,7 +10,7 @@
     <meta name="description"
         content="Registrate para comprar online mejor precio, calidad y servicio de Argentina.🤩!No esperes más!">
     <meta name="keywords" content="Registrarse, Iniciar sesion, User, Computación, Informatica, Gaming, PC, Gamer">
-    <link rel="icon" href="../img/icon.ico">
+    <link rel="icon" href="../img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
@@ -80,29 +80,42 @@
     <!-- Inicio de Main -->
     <main class="main">
         <h2 class="h2">Registrarse</h2>
-        <section class="form__register">
-            <div class="superior">
-                <span>
-                    <div data-aos="fade-left"><i class="fa-regular fa-user"></i></div>
-                </span>
+        <article class="article">
+            <h3>¿Por qué?</h3>
+            <p>Con tu registro podrás realizar compras online en nuestro sitio web.</p>  
+            <p>Los datos que dejes aquí los utilizaremos para contactarnos y enviarte los productos que hayas comprado. También los utilizaremos para la confección de los comprobantes fiscales que deben acompañar a dichos productos.</p>
+            <p>No utilizaremos tus datos para ningún otro fin, ni para enviarte información que no hayas solicitado.</p>
+        </article>
+        <article class="article">
+            <h4>Recordá:</h4>
+            <p>Es muy importante que coloques todos tus datos reales a la hora de registrar tu cuenta. Ante cualquier inconveniente vamos a estar comunicándonos con vos por teléfono o vía email.</p>  
+        </article>
+        <form class="form">
+            <p class="form__parrafo">¿Ya tienes una cuenta?<a href="#" class="form__link">Iniciar Sesión</a></p>
+            <div class="form__container">
+                <div class="form__group">
+                    <input type="email" id="name" class="form__input" required>
+                    <label for="name">Email</label>
+                </div>
+                <div class="form__group">
+                    <input type="text" id="user" class="form__input" required>
+                    <label for="user">Usuario</label>
+                </div>
+                <div class="form__group">
+                    <input type="password" id="password" class="form__input" required>
+                    <label for="password">Contraseña</label>
+                </div>
+                <div class="form__group">
+                    <input type="password" id="password" class="form__input" required>
+                    <label for="password">Confirmar contraseña</label>
+                </div>
+                <div class="form__group">
+                    <input type="number" id="telefono" class="form__input" required>
+                    <label for="telephone">Teléfono</label>
+                </div>
+                <input type="submit" class="form__submit" value="Enviar">
             </div>
-
-            <form action="#" class="register">
-                <label for="usuario">Email:</label>
-                <input type="email" name="usuario" id="usuario" required>
-
-                <label for="password">Contraseña:</label>
-                <input type="password" name="password" id="password" required>
-
-                <label for="password">Confirmar contarseña:</label>
-                <input type="password" name="password" id="password" required>
-
-                <label for="number">Teléfono:</label>
-                <input type="number" name="number" id="number" required>
-
-                <input id="submit" type="submit" value="Enviar">
-            </form>
-        </section>
+        </form>
     </main>
     <!-- Cierre de Main-->
     <!-- Inicio de Footer-->
@@ -118,7 +131,7 @@
                 </div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
-                <p class="h5 mb-3">Informacion</p>
+                <p class="h5 mb-3">Información</p>
                 <div class="mb-3">
                     <a class="text-white text-decoration-none" href="../index.html">Inicio</a>
                 </div>
@@ -127,9 +140,9 @@
                 </div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
-                <p class="h5 mb-3">¿Donde estamos?</p>
-                <p>Lunes a Vinernes: de 9 a 13hs y de 17 a 21hs</p>
-                <p>Sabados: de 9 a 13hs</p>
+                <p class="h5 mb-3">¿Dónde estamos?</p>
+                <p>Lunes a Viernes: 9 a 13hs / 17 a 21hs</p>
+                <p>Sábados: 9 a 13hs</p>
                 <div class="mb-3">
                     <a class="text-white text-decoration-none" href="https://goo.gl/maps/Er63VFA8bNK5vdHu7"
                         target="_blank">
@@ -141,7 +154,7 @@
                 <p class="h5 mb-3">Redes</p>
                 <!-- Button trigger modal -->
                 <button type="button" class="btn mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    ver links
+                    Ver links
                 </button>
 
                 <!-- Modal -->
@@ -150,7 +163,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title text-dark" id="exampleModalLabel">Contactanos</h5>
+                                <h5 class="modal-title text-dark" id="exampleModalLabel">Contáctanos por:</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
