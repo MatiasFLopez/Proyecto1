@@ -454,6 +454,8 @@ aside {
   .iconos__cajas {
     width: 130px;
     height: 148px; }
+    .iconos__cajas h4 {
+      bottom: 25px; }
   .carousel {
     display: none; } }
 
