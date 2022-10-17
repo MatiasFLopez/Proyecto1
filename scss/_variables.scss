@@ -25,7 +25,8 @@ $mov: all 300ms ease;
     border-radius: 5px;
     border: none;
     text-decoration: none;
-    &:hover{
+
+    &:hover {
         background-color: $purpura;
         color: $celeste;
     }
