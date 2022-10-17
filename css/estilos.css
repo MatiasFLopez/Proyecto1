@@ -1,6 +1,6 @@
 /* === Paleta de Colores === */
 /* === transiciones === */
-/* === Mixin === */
+/* === Mixins === */
 /* === Reset === */
 * {
   margin: 0;
@@ -171,7 +171,7 @@ nav > ul {
 /* === Cierre de Header === */
 /* === Contenido de Asise === */
 aside {
-  text-align: center; }
+  overflow: hidden; }
   aside img {
     width: 100%; }
 
@@ -181,7 +181,7 @@ aside {
   text-align: center;
   color: #4daddf;
   font-size: 1.7em;
-  padding: 1rem; }
+  padding: .7rem; }
 
 .container__cards {
   display: flex;
@@ -294,30 +294,18 @@ aside {
 
 .form {
   background-color: #fff;
-  margin: auto;
+  margin: 1em auto;
   width: 90%;
   max-width: 500px;
   padding: 3em 3em;
   border-radius: 15px;
   box-shadow: 0 5px 10px -5px black;
   text-align: center;
-  color: #000; }
+  color: #6c4892; }
   .form__parrafo {
-    display: inline-block; }
-  .form__link {
-    margin-top: 1em;
-    display: block;
-    text-decoration: none;
-    transition: all 300ms ease;
-    color: #4daddf;
-    padding: 1rem; }
-    .form__link:hover {
-      background: #4daddf;
-      color: #6c4892;
-      transform: scale(1.1);
-      margin-left: 2px;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
+    padding-top: 1em; }
   .form__container {
+    margin-top: 1.5em;
     display: grid;
     gap: 1em; }
   .form__group {
@@ -333,16 +321,8 @@ aside {
     outline: none;
     border-bottom: 2px solid #4daddf;
     font-family: 'Basic', sans-serif; }
-  .form__submit {
-    background-color: #6c4892;
-    color: #4daddf;
-    font-family: 'Basic', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: .8rem 0;
-    margin-top: 2em;
-    border: none;
-    border-radius: .5em; }
+  .form .button {
+    margin-top: 1em; }
 
 /* === Cierre de Main === */
 /* === Contenido de footer === */
@@ -363,7 +343,8 @@ aside {
   color: #6c4892;
   padding: .6em;
   border-radius: 5px;
-  border: none; }
+  border: none;
+  text-decoration: none; }
   .button:hover {
     background-color: #6c4892;
     color: #4daddf; }
@@ -436,6 +417,8 @@ aside {
     height: 300px;
     visibility: visible;
     opacity: 1; }
+  .container__cards .cards {
+    width: 200px; }
   .form__register {
     width: 280px; }
     .form__register .superior span {
@@ -462,6 +445,8 @@ aside {
     .iconos__cajas h4 {
       bottom: 25px; }
   .carousel {
-    display: none; } }
+    display: none; }
+  .container__cards .cards {
+    width: 190px; } }
 
 /* === Cierre de @media === */

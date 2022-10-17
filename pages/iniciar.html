@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mouse | PcShop</title>
+    <title>Iniciar Sesión | PcShop</title>
     <meta name="author" content="PcShop">
     <meta name="description"
-        content="Comprá Mouses al mejor precio, calidad y servicio de Argentina.🤩!No esperes más!">
-    <meta name="keywords" content="Mouse, Ratón, Óptico, Periféricos, Computación, Informatica, Gaming, PC, Gamer">
+        content="Inicia sesión para empezar a comprar online al mejor precio, calidad y servicio en Argentina.🤩!No esperes más!">
+    <meta name="keywords" content="Registrarse, Iniciar sesion, User, Computación, Informatica, Gaming, PC, Gamer">
     <link rel="icon" href="../img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +51,7 @@
                                 <li><a href="./almacenamiento.html">Almacenamiento</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" id="seleccion">Periféricos</a>
+                        <li><a href="#">Periféricos</a>
                             <ul>
                                 <li><a href="./mouse.html">Mouse</a></li>
                                 <li><a href="./teclado.html">Teclado</a></li>
@@ -61,7 +61,7 @@
                         </li>
                         <li><a href="./gabinetes.html">Gabinetes</a></li>
                         <li><a href="./monitores.html">Monitores</a></li>
-                        <li><a href="#"><i class="fa-solid fa-user"></i></a>
+                        <li><a href="#" id="seleccion"><i class="fa-solid fa-user"></i></a>
                             <ul>
                                 <li><a href="./iniciar.html">Mi cuenta</a></li>
                             </ul>
@@ -79,52 +79,24 @@
     <!-- Cierre de Aside -->
     <!-- Inicio de Main -->
     <main class="main">
-        <h2 class="h2">Mouse</h2>
-        <section class="container__cards">
-            <div class="cards">
-                <figure>
-                    <img src="../img/mouse1.jpg" alt="HyperX Pulsefire Haste">
-                </figure>
-                <div class="contenido">
-                    <h3>HyperX Pulsefire Haste</h3>
-                    <h5>En Stock</h5>
-                    <p>$17.000</p>
-                    <a href="#">comprar</a>
+        <section>
+            <h2 class="h2">Mi cuenta</h2>
+            <form class="form">
+                <h3>Iniciar Sesión</h3>
+                <p class="form__parrafo">¿Aún no tienes una cuenta?</p>
+                <a class="button" href="./registrarse.html">Regístrate</a>
+                <div class="form__container">
+                    <div class="form__group">
+                        <input type="email" id="name" class="form__input" required>
+                        <label for="name">Email</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" id="user" class="form__input" required>
+                        <label for="user">Contraseña</label>
+                    </div>
+                    <input type="submit" class="button" value="Ingresar">
                 </div>
-            </div>
-            <div class="cards">
-                <figure>
-                    <img src="../img/mouse2.jpg" alt="Hyperx Pulsefire Core Rgb">
-                </figure>
-                <div class="contenido">
-                    <h3>Hyperx Pulsefire Core Rgb</h3>
-                    <h5>En Stock</h5>
-                    <p>$2.700</p>
-                    <a href="#">comprar</a>
-                </div>
-            </div>
-            <div class="cards">
-                <figure>
-                    <img src="../img/mouse3.jpg" alt="Logitech G Pro">
-                </figure>
-                <div class="contenido">
-                    <h3>Logitech G Pro</h3>
-                    <h5>En Stock</h5>
-                    <p>$5.000</p>
-                    <a href="#">comprar</a>
-                </div>
-            </div>
-            <div class="cards">
-                <figure>
-                    <img src="../img/mouse4.jpg" alt="Logitech G604">
-                </figure>
-                <div class="contenido">
-                    <h3>Logitech G604</h3>
-                    <h5>En Stock</h5>
-                    <p>$11.200</p>
-                    <a href="#">comprar</a>
-                </div>
-            </div>
+            </form>
         </section>
         <section id="mycarousel" class="carousel carousel-dark slide w-100 m-auto " data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -193,7 +165,7 @@
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <p class="h5 mb-3">Información</p>
                 <div class="mb-3">
-                    <a class="text-white text-decoration-none" href="../index.html">Inicio</a>
+                    <a class="text-white text-decoration-none" href="../index.html">Home</a>
                 </div>
                 <div class="mb-3">
                     <a class="text-white text-decoration-none" href="./iniciar.html">Iniciar Sesión</a>
@@ -259,6 +231,7 @@
     <script src="https://kit.fontawesome.com/eb0bcb2bd3.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>   AOS.init(); </script>
+    <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>

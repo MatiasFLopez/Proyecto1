@@ -6,7 +6,7 @@
     text-align: center;
     color: $celeste;
     font-size: 1.7em;
-    padding: 1rem;
+    padding: .7rem;
 }
 
 // Cards de los productos
@@ -163,33 +163,19 @@
 
 .form {
     background-color: #fff;
-    margin: auto;
+    margin: 1em auto;
     width: 90%;
     max-width: 500px;
     padding: 3em 3em;
     border-radius: 15px;
     box-shadow: 0 5px 10px -5px rgb(0, 0, 0 / 30%);
     text-align: center;
-    color: #000;
+    color: $purpura;
     &__parrafo{
-        display: inline-block;
-    }
-    &__link {
-        margin-top: 1em;
-        display: block;
-        text-decoration: none;
-        transition: $mov;
-        color: $celeste;
-        padding: 1rem;
-        &:hover{
-            background: $celeste;
-            color: $purpura;
-            transform: scale(1.1);
-            margin-left: 2px;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-        }
+        padding-top: 1em;
     }
     &__container {
+        margin-top: 1.5em;
         display: grid;
         gap: 1em;
     }
@@ -208,16 +194,8 @@
         border-bottom: 2px solid $celeste;
         font-family: 'Basic', sans-serif;
     }
-    &__submit {
-        background-color: $purpura;
-        color: $celeste;
-        font-family: 'Basic', sans-serif;
-        font-weight: 300;
-        font-size: 1rem;
-        padding: .8rem 0;
-        margin-top: 2em;
-        border: none;
-        border-radius: .5em;
+    .button {
+        margin-top: 1em;
     }
 }
 

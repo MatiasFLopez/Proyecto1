@@ -8,7 +8,7 @@
     <title>Registrarse | PcShop</title>
     <meta name="author" content="PcShop">
     <meta name="description"
-        content="Registrate para comprar online mejor precio, calidad y servicio de Argentina.🤩!No esperes más!">
+        content="Regístrate para comprar online al mejor precio, calidad y servicio en Argentina.🤩!No esperes más!">
     <meta name="keywords" content="Registrarse, Iniciar sesion, User, Computación, Informatica, Gaming, PC, Gamer">
     <link rel="icon" href="../img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +63,7 @@
                         <li><a href="./monitores.html">Monitores</a></li>
                         <li><a href="#" id="seleccion"><i class="fa-solid fa-user"></i></a>
                             <ul>
-                                <li><a href="./registrarse.html">Mi cuenta</a></li>
+                                <li><a href="./iniciar.html">Mi cuenta</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -79,46 +79,56 @@
     <!-- Cierre de Aside -->
     <!-- Inicio de Main -->
     <main class="main">
-        <h2 class="h2">Registrarse</h2>
-        <article class="article">
-            <h3>¿Por qué?</h3>
-            <p>Con tu registro podrás realizar compras online en nuestro sitio web.</p>
-            <p>Los datos que dejes aquí los utilizaremos para contactarnos y enviarte los productos que hayas comprado.
-                También los utilizaremos para la confección de los comprobantes fiscales que deben acompañar a dichos
-                productos.</p>
-            <p>No utilizaremos tus datos para ningún otro fin, ni para enviarte información que no hayas solicitado.</p>
-        </article>
-        <article class="article">
-            <h4>Recordá:</h4>
-            <p>Es muy importante que coloques todos tus datos reales a la hora de registrar tu cuenta. Ante cualquier
-                inconveniente vamos a estar comunicándonos con vos por teléfono o vía email.</p>
-        </article>
-        <form class="form">
-            <p class="form__parrafo">Completa con tus datos</p>
-            <div class="form__container">
-                <div class="form__group">
-                    <input type="email" id="name" class="form__input" required>
-                    <label for="name">Email</label>
+        <section>
+            <h2 class="h2">Regístrate</h2>
+            <article class="article">
+                <h3>¿Por qué?</h3>
+                <p>Con tu registro podrás realizar compras online en nuestro sitio web.</p>
+                <p>Los datos que dejes aquí los utilizaremos para contactarnos y enviarte los productos que hayas
+                    comprado.
+                    También los utilizaremos para la confección de los comprobantes fiscales que deben acompañar a
+                    dichos
+                    productos.</p>
+                <p>No utilizaremos tus datos para ningún otro fin, ni para enviarte información que no hayas solicitado.
+                </p>
+            </article>
+            <article class="article">
+                <h4>Recordá:</h4>
+                <p>Es muy importante que coloques todos tus datos reales a la hora de registrar tu cuenta. Ante
+                    cualquier
+                    inconveniente vamos a estar comunicándonos con vos por teléfono o vía email.</p>
+            </article>
+        </section>
+        <section>
+            <form class="form">
+                <h3>Completa con tus datos</h3>
+                <p class="form__parrafo">¿Ya estas registrado?</p>
+                <a class="button" href="./iniciar.html">Iniciar Sesión</a>
+                <div class="form__container">
+                    <div class="form__group">
+                        <input type="email" id="name" class="form__input" required>
+                        <label for="name">Email</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" id="user" class="form__input" required>
+                        <label for="user">Usuario</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="password" id="password" class="form__input" required>
+                        <label for="password">Contraseña</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="password" id="password" class="form__input" required>
+                        <label for="password">Confirmar contraseña</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="number" id="telefono" class="form__input" required>
+                        <label for="telephone">Teléfono</label>
+                    </div>
+                    <input type="submit" class="button" value="Enviar">
                 </div>
-                <div class="form__group">
-                    <input type="text" id="user" class="form__input" required>
-                    <label for="user">Usuario</label>
-                </div>
-                <div class="form__group">
-                    <input type="password" id="password" class="form__input" required>
-                    <label for="password">Contraseña</label>
-                </div>
-                <div class="form__group">
-                    <input type="password" id="password" class="form__input" required>
-                    <label for="password">Confirmar contraseña</label>
-                </div>
-                <div class="form__group">
-                    <input type="number" id="telefono" class="form__input" required>
-                    <label for="telephone">Teléfono</label>
-                </div>
-                <input type="submit" class="form__submit" value="Enviar">
-            </div>
-        </form>
+            </form>
+        </section>
     </main>
     <!-- Cierre de Main-->
     <!-- Inicio de Footer-->
@@ -137,6 +147,9 @@
                 <p class="h5 mb-3">Información</p>
                 <div class="mb-3">
                     <a class="text-white text-decoration-none" href="../index.html">Inicio</a>
+                </div>
+                <div class="mb-3">
+                    <a class="text-white text-decoration-none" href="./iniciar.html">Iniciar Sesión</a>
                 </div>
                 <div class="mb-3">
                     <a class="text-white text-decoration-none" href="./registrarse.html">Registrarme</a>

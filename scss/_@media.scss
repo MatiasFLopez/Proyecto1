@@ -98,6 +98,12 @@
         opacity: 1;
     }
 
+    .container__cards {
+        .cards {
+            width: 200px;
+        }
+    }
+
     .form__register {
         width: 280px;
 
@@ -149,6 +155,12 @@
 
     .carousel {
         display: none;
+    }
+
+    .container__cards {
+        .cards {
+            width: 190px;
+        }
     }
 }
 
