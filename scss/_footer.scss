@@ -16,9 +16,16 @@
     color: $celeste;
 }
 
-.btn {
+.button {
     background-color: $celeste;
     color: $purpura;
+    padding: .6em;
+    border-radius: 5px;
+    border: none;
+    &:hover{
+        background-color: $purpura;
+        color: $celeste;
+    }
 }
 
 .modal-body {

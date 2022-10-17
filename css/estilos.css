@@ -53,15 +53,14 @@ body {
     width: 80px; }
   .header_superior .buscador input {
     background-color: #f0f0f0;
-    width: 280px;
+    width: 250px;
     padding: 4px; }
 
 /* Bara de navegacion */
 .barra_menu {
   width: 100%;
   height: 74px;
-  background: #6c4892;
-  padding: 0px 100px; }
+  background: #6c4892; }
   .barra_menu .menu {
     max-width: 1200px;
     margin: auto;
@@ -174,7 +173,7 @@ nav > ul {
 aside {
   text-align: center; }
   aside img {
-    width: 82%; }
+    width: 100%; }
 
 /* === Cierre de Asise === */
 /* === Contenido de main === */
@@ -359,9 +358,15 @@ aside {
 .h5 {
   color: #4daddf; }
 
-.btn {
+.button {
   background-color: #4daddf;
-  color: #6c4892; }
+  color: #6c4892;
+  padding: .6em;
+  border-radius: 5px;
+  border: none; }
+  .button:hover {
+    background-color: #6c4892;
+    color: #4daddf; }
 
 .modal-body {
   display: flex;
